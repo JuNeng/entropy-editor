@@ -504,15 +504,6 @@ export default class WysiwygEditor extends Component {
             aria-hidden={(!editorFocused && toolbarOnFocus).toString()}
             onFocus={this.onToolbarFocus}
           >
-            <div className="rdw-title-wrapper" aria-label="rdw-title-control">
-              <div
-                className="rdw-option-wrapper"
-                aria-selected="true"
-                title="exit fullscreen"
-              >
-                描述
-              </div>
-            </div>
             {toolbar.options.map((opt, index) => {
               const Control = Controls[opt];
               const config = toolbar[opt];
